@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url("./Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url("./Poppins-Bold.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Poppins-Light', sans-serif;
+    box-sizing: border-box;
+}
+
+.animation-fade {
+    animation: animation-fade .7s ease;
+}
+
+@keyframes animation-fade {
+    from {
+        opacity: 0;
+        transform: scale(0.7)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

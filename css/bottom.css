@@ -1,0 +1,42 @@
+.bottom-content {
+    margin-top: 100px;
+    width: 90%;
+    max-width: 1600px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 使用 auto-fit 和 minmax 设置最小和最大宽度 */
+    gap: 20px;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.bottom-content div {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    transition: box-shadow .3s ease;
+}
+
+.bottom-content div:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset,
+    -5px -5px 10px rgba(239, 239, 239, 0.5) inset;
+}
+
+
+.blog-a {
+    background-color: rgba(255, 153, 204, 0.64);
+}
+
+.gallery-a {
+    background-color: rgba(0, 130, 253, 0.66);
+}
+
+/*.bottom-content a div:nth-child(3) {*/
+/*    background-color: rgba(255, 153, 204, 0.64);*/
+/*}*/
+

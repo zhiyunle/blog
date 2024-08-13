@@ -1,0 +1,8 @@
+@font-face {
+    font-family: '未来莹黑';
+    src: url('GlowSansSC-Wide-Bold.otf') format('opentype');
+}
+* {
+    font-family: '未来莹黑', sans-serif;
+    font-weight: 100;
+}

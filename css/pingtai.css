@@ -1,0 +1,58 @@
+.pingtai-box {
+    margin-top: 40px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logs {
+    width: 170px;
+    height: auto;
+    border-radius: 13px;
+    padding: 14px;
+    display: flex;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.logs img {
+    width: 20px;
+    height: 20px;
+}
+.logs span {
+    font-family: 'Poppins-Bold', serif;
+    color: white;
+    margin-left: 10px;
+}
+
+#bili {
+    background-color: rgb(183, 230, 255);
+}
+
+#spotify {
+    background-color: #75fba2;
+}
+
+#github {
+    background-color: rgb(116, 116, 116);
+}
+
+#bili:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 30px 0 rgb(183, 230, 255);
+}
+
+#spotify:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 30px 0 #75fba2;
+}
+
+#github:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 30px 0 rgb(116, 116, 116);
+}

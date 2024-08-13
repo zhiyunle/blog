@@ -1,0 +1,140 @@
+body {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.nav {
+    width: 90%;
+    max-width: 1600px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    border-radius: 1rem;
+    background-color: rgba(255, 253, 255, 0.68);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(239, 239, 239, 0.5);
+    transition: 0.4s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    margin-bottom: 100px;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.left-content li {
+    margin-left: 15px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    transition: border .5s ease;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.left-content li:hover {
+    border: 2px solid rgb(4, 177, 230);
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.ava {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    border: 1px solid #7f7f7f;
+    transition: .4s ease;
+}
+
+.left-butt {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    .nav {
+        align-items: flex-start;
+    }
+
+    .left-content {
+        display: none;
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        flex-grow: 2;
+        text-align: center;
+        margin-top: 65px
+    }
+
+    .left-content li {
+        opacity: 0;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        border-radius: 1rem;
+        transition: .4s ease;
+        border: 0;
+    }
+
+    @keyframes li_animation_start {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes li_animation_finish {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    .left-content li:hover {
+        border: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .left-butt {
+        display: flex;
+        font-size: 23px;
+        margin-top: 16px;
+        margin-left: 30px;
+    }
+
+    .right-content {
+        margin-top: 7px;
+        margin-right: 0;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1001px) {
+    .nav {
+        height: 60px !important;
+    }
+
+    .left-content {
+        display: flex !important;
+    }
+
+    .left-content li {
+        opacity: 1 !important;
+    }
+}
